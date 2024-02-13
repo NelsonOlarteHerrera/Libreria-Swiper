@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS SWIPER-->
+    <link rel="preload" href="css/swiper-bundle.min.css" as="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!--CSS ANIMATE.CSS-->
+    <link rel="preload" href="css/animate.min.css" as="stylesheet">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!--CSS Desarrollador-->
+    <link rel="preload" href="css/style.css" as="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Precarga de scripts-->
+    <link rel="preload" href="js/swiper-bundle.min.js" as="script">
+    <link rel="preload" href="js/script.js" as="script">
+    <title>Swiper nelson</title>
+</head>
+<body>
+    <!--clase swiper principal siempre debe estar-->
+    <div class="swiper">
+        <!--clase necesaria swiper-wrapper siempre requerida este envoltorio-->
+        <div class="swiper-wrapper">
+            <!--clase necesaria swiper-slide para indicar deslizamiento, muestra todo en 1 linea-->
+            <!--Slide 1-->
+            <div class="swiper-slide slide-1 slide-item img1">
+                <div class="text-container"><!--Para colocar text dentro de las img-->
+                    <h1 class="slider-title">SSJJ 1</h1>
+                </div>
+            </div>
+            <!--Slide 2-->
+            <div class="swiper-slide slide-2 slide-item img2">
+                <div class="text-container"><!--Para colocar text dentro de las img-->
+                    <h1 class="slider-title">SSJJ 3</h1>
+                </div>
+            </div>
+            <!--Slide 3-->
+            <div class="swiper-slide slide-3 slide-item img3">
+                <div class="text-container"><!--Para colocar text dentro de las img-->
+                    <h1 class="slider-title">SSJJ 4</h1>
+                </div>
+            </div>
+        </div>
+
+        <!--Botones de navegacion clase swiper-button-prev o next-->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!--Para Paginacion clase swiper-pagination se tiene q inicializar js-->
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+
+    <!--SCRIP SWIPER-->
+    <script src="js/swiper-bundle.min.js" defer></script>
+    <!--SCRIPT Desarrollador-->
+    <script src="js/script.js" defer></script>
+</body>
+</html>

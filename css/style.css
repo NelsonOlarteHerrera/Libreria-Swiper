@@ -1,0 +1,76 @@
+*{/*Reseteamos la hoja de estilo*/
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.swiper{
+    width: 100%;/*100 del ancho*/
+    height:100vh;/*100 del viewportheight altura de la ventana grafica, es mejor*/
+}
+
+.img1{
+    background-image: linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),/*Hace sombra radial encima del img*/
+    url(../imgs/img1.jpg)/*Agrega la imagen por CSS*/
+}
+
+.img2{
+    background-image: linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),/*Hace sombra radial encima del img*/
+    url(../imgs/img2.jpg)/*Agrega la imagen por CSS*/
+}
+
+.img3{
+    background-image: 
+    url(../imgs/img3.jpg)/*Agrega la imagen por CSS*/
+}
+
+.swiper-slide{
+    background-size: cover;/*Imagen cubre toda la pagina*/
+    background-position: center;/*Centra la imagen*/
+    background-repeat: no-repeat;/*No repite*/
+    background-attachment: fixed;/*Hace que redimensione*/
+}
+
+.swiper-button-prev, .swiper-button-next{
+    color:white;
+    text-shadow:  1px 1px 10px rgba(0,0,0,1);
+}
+
+.text-container{/*Testo dentro del swiper-slide*/
+    height: 100%;
+    display: flex;
+    justify-content: center;/*Envia al centro horizontal*/
+    align-items: center;/*Envia altura horizontal*/
+    color:white;
+    text-shadow:  1px 1px 10px rgba(0,0,0,1);
+    font-size: 70px;/*Tamaño del texto*/
+}
+
+.swiper-pagination-bullet{/*Estilo al boton de paginacion*/
+    background-color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.swiper-pagination{/*Estilo a la paginacion*/
+    display: none;/*Oculta la paginacion*/
+}
+
+/*############USAMOS LAS ANIMACIONES DE ANIMATE*/
+.swiper-slide-active h1{
+    animation:fadeInUp 1s;
+}
+
+
+/*Media querys para el tamaño de pagina*/
+@media (max-width:500px){
+    .swiper-pagination{
+        display:block;/*muestra swiper-pagination= paginacion*/
+    }
+    .swiper-button-prev, .swiper-button-next{
+        display:none
+    }
+}
